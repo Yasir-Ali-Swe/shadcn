@@ -1,34 +1,39 @@
 import React from 'react'
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupAction, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from './ui/sidebar'
-import { User, Home, Inbox, Calendar, Search, Settings } from 'lucide-react'
+import { User, Home, Inbox, Calendar, NotepadText, ChartNoAxesCombined } from 'lucide-react'
+import { PiStudent, PiChalkboardTeacher } from "react-icons/pi";
+import { IoSchoolOutline } from "react-icons/io5";
 import Link from 'next/link'
+import Image from 'next/image';
+
 
 const links = [
     {
         title: "Home",
-        url: "/",
+        url: "/Home",
         icon: Home
     },
     {
-        title: "Inbox",
-        url: "/inbox",
-        icon: Inbox
+        title: "Students",
+        url: "/Students",
+        icon: PiStudent
     },
     {
-        title: "Calendar",
-        url: "/calendar",
-        icon: Calendar
+        title: "Tutors",
+        url: "/Tutors",
+        icon: PiChalkboardTeacher
     },
     {
-        title: "Search",
-        url: "/search",
-        icon: Search
+        title: "Courses",
+        url: "/Courses",
+        icon: NotepadText
     },
     {
-        title: "Settings",
-        url: "/settings",
-        icon: Settings
+        title: "Analytics",
+        url: "/Analytics",
+        icon: ChartNoAxesCombined
     },
+
 ]
 
 const AppSidebar = () => {
@@ -38,10 +43,10 @@ const AppSidebar = () => {
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <SidebarMenuButton asChild>
-                            <Link href="/">
-                                <User className="mr-2 h-5 w-5" />
-                                <span className="flex items-center text-2xl">
-                                    Yasir Ali
+                            <Link href="/" >
+                                <IoSchoolOutline size={64}  />
+                                <span className="flex items-center text-xl font-semibold">
+                                    Tutor Universe
                                 </span>
                             </Link>
                         </SidebarMenuButton>
@@ -50,7 +55,7 @@ const AppSidebar = () => {
             </SidebarHeader>
             <SidebarContent>
                 <SidebarGroup>
-                    <SidebarGroupLabel className={"text-base"}>Application</SidebarGroupLabel>
+                    <SidebarGroupLabel className={"text-base"}>System Overview</SidebarGroupLabel>
                     <SidebarGroupContent>
                         <SidebarMenu>
                             <SidebarMenuItem>
@@ -58,7 +63,7 @@ const AppSidebar = () => {
                                     links.map((links, index) => (
                                         <SidebarMenuButton asChild key={index}>
                                             <Link href={links.url} className='my-3'>
-                                                <links.icon className="mr-2 h-5 w-5" />
+                                                <links.icon className='mr-2' />
                                                 <span className="flex items-center text-base">
                                                     {links.title}
                                                 </span>
