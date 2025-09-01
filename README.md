@@ -12,3 +12,4 @@ This project is a modern **dashboard application** built using:
 - Styled with Tailwind CSS  
 - Clean and minimal design  
 
+## 📂 Project Structure
