@@ -4,6 +4,10 @@ import { FaDollarSign } from "react-icons/fa6";
 import { IoBookOutline } from "react-icons/io5";
 import { PiStudent } from "react-icons/pi";
 import { FaChalkboardTeacher } from "react-icons/fa";
+import RevenueChart from "@/components/Home/RevenueChart";
+import StudentChart from "@/components/Home/Students";
+import TutorsChart from "@/components/Home/Tutors";
+import CourseVsTutorChart from "@/components/Home/CourseVsTutor";
 const metrics = [
     {
         title: "Total Sales / Revenue",
@@ -56,6 +60,16 @@ const page = () => {
                             </CardContent>
                         </Card>
                     ))}
+                </div>
+                <div className='my-5 '>
+                    <RevenueChart />
+                </div>
+                <div className='my-5 grid grid-cols-1 lg:grid-cols-2 gap-6'>
+                    <StudentChart />
+                    <TutorsChart />
+                </div>
+                <div className='my-5'>
+                    <CourseVsTutorChart />
                 </div>
             </div>
         </div>
