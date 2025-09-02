@@ -45,7 +45,7 @@ const chartData = [
 const chartConfig = {
     revenue: {
         label: "Revenue",
-        color: "var(--chart-1)",
+        color: "var(--chart-3)",
     },
 }
 
@@ -90,7 +90,7 @@ export default function ChartLineDefault() {
                                 dataKey="revenue"
                                 stroke="var(--color-revenue, var(--chart-1))"
                                 strokeWidth={3}
-                                dot={{ r: 4, fill: "var(--chart-1)" }}
+                                dot={{ r: 4, fill: "var(--chart-3)" }}
                                 activeDot={{ r: 6 }}
                             />
                         </LineChart>

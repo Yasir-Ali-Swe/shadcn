@@ -17,8 +17,6 @@ import {
     ChartTooltip,
     ChartTooltipContent,
 } from "@/components/ui/chart"
-
-// Example: Tutors Active vs Inactive
 const tutorData = [
     { status: "Active", count: 150, fill: "var(--chart-3)" },
     { status: "Inactive", count: 30, fill: "var(--chart-4)" },

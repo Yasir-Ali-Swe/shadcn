@@ -18,15 +18,14 @@ import {
     ChartTooltipContent,
 } from "@/components/ui/chart"
 
-// Example: Students Active vs Inactive
 const studentData = [
-    { status: "Active", count: 420, fill: "var(--chart-1)" },
-    { status: "Inactive", count: 80, fill: "var(--chart-2)" },
+    { status: "Active", count: 420, fill: "var(--chart-3)" },
+    { status: "Inactive", count: 80, fill: "var(--chart-4)" },
 ]
 
 const studentConfig = {
-    active: { label: "Active", color: "var(--chart-1)" },
-    inactive: { label: "Inactive", color: "var(--chart-2)" },
+    active: { label: "Active", color: "var(--chart-3)" },
+    inactive: { label: "Inactive", color: "var(--chart-4)" },
 }
 
 export default function StudentsDonutChart() {

@@ -56,33 +56,62 @@ const page = () => {
                                 </SelectGroup>
                             </SelectContent>
                         </Select>
+                        <Select>
+                            <SelectTrigger className="">
+                                <SelectValue placeholder="Select student course" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectGroup>
+                                    <SelectLabel>Select by Course </SelectLabel>
+                                    <SelectItem value="english">English</SelectItem>
+                                    <SelectItem value="physics">Physics</SelectItem>
+                                    <SelectItem value="chemistry">Chemistry</SelectItem>
+                                    <SelectItem value="biology">Biology</SelectItem>
+                                    <SelectItem value="computer-science">Computer Science</SelectItem>
+                                </SelectGroup>
+                            </SelectContent>
+                        </Select>
                     </div>
-                    <div className='lg:hidden'>
-                        <Button onClick={toggleFilters}>{showFilters ? "Hide Filters" : "Show Filters"}</Button>
-                        {showFilters && (
-                            <div className='mt-2 flex flex-col gap-4'>
-                                <Input type="text" placeholder="Search name" className={"w-[60%]"} />
-                                <Input type="text" placeholder="Search Email" className={"w-[60%]"} />
-                                <Input type="text" placeholder="Search Phone" className={"w-[60%]"} />
-                                <div className='flex items-center gap-2'>
-                                    <Select>
-                                        <SelectTrigger className="">
-                                            <SelectValue placeholder="Select a Active or Inactive" />
-                                        </SelectTrigger>
-                                        <SelectContent>
-                                            <SelectGroup>
-                                                <SelectLabel>Select Active or Inactive </SelectLabel>
-                                                <SelectItem value="apple">Active</SelectItem>
-                                                <SelectItem value="banana">Inactive</SelectItem>
-                                            </SelectGroup>
-                                        </SelectContent>
-                                    </Select>
-                                    <Button variant={"outline"} size={"lg"}>Apply</Button>
-                                </div>
+                </div>
+                <div className='lg:hidden mt-5'>
+                    <Button onClick={toggleFilters}>{showFilters ? "Hide Filters" : "Show Filters"}</Button>
+                    {showFilters && (
+                        <div className='mt-2 flex flex-col gap-4'>
+                            <Input type="text" placeholder="Search name" className={"w-[60%]"} />
+                            <Input type="text" placeholder="Search Email" className={"w-[60%]"} />
+                            <Input type="text" placeholder="Search Phone" className={"w-[60%]"} />
+                            <Select>
+                                <SelectTrigger className="">
+                                    <SelectValue placeholder="Select student course" />
+                                </SelectTrigger>
+                                <SelectContent>
+                                    <SelectGroup>
+                                        <SelectLabel>Select by Course </SelectLabel>
+                                        <SelectItem value="english">English</SelectItem>
+                                        <SelectItem value="physics">Physics</SelectItem>
+                                        <SelectItem value="chemistry">Chemistry</SelectItem>
+                                        <SelectItem value="biology">Biology</SelectItem>
+                                        <SelectItem value="computer-science">Computer Science</SelectItem>
+                                    </SelectGroup>
+                                </SelectContent>
+                            </Select>
+                            <div className='flex items-center gap-2'>
+                                <Select>
+                                    <SelectTrigger className="">
+                                        <SelectValue placeholder="Select a Active or Inactive" />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectGroup>
+                                            <SelectLabel>Select Active or Inactive </SelectLabel>
+                                            <SelectItem value="apple">Active</SelectItem>
+                                            <SelectItem value="banana">Inactive</SelectItem>
+                                        </SelectGroup>
+                                    </SelectContent>
+                                </Select>
+                                <Button variant={"outline"} size={"lg"}>Apply</Button>
                             </div>
-                        )}
-
-                    </div>
+                        </div>
+                    )}
                 </div>
                 <div className='mt-5'>
                     <StudentTable />
