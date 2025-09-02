@@ -30,7 +30,7 @@ export const description = "Daily new students and tutors for current month"
 const dailyJoins = Array.from({ length: 30 }, (_, i) => ({
     day: i + 1,
     students: Math.floor(Math.random() * 20) + 5,
-    tutors: Math.floor(Math.random() * 5) + 1, 
+    tutors: Math.floor(Math.random() * 5) + 1,
 }))
 
 const chartConfig = {
@@ -64,7 +64,7 @@ export default function DailyJoinsChart() {
                                 cursor={{ strokeDasharray: "3 3" }}
                                 content={
                                     <ChartTooltipContent
-                                        formatter={(value, name) => [`${value}`, name]}
+                                        formatter={(value, name) => [`${value} `, name]}
                                     />
                                 }
                             />
