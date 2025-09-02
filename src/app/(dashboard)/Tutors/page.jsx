@@ -115,7 +115,6 @@ const page = () => {
                             </div>
                         </div>
                     )}
-
                 </div>
                 <div className='my-5'>
                     <TutorTable />
