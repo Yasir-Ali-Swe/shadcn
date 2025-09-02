@@ -43,7 +43,7 @@ export default function TutorsDonutChart() {
             <CardContent className="flex-1 pb-0">
                 <ChartContainer
                     config={tutorConfig}
-                    className="mx-auto aspect-square max-h-[250px]"
+                    className="mx-auto aspect-square max-h-[300px]"
                 >
                     <PieChart>
                         <ChartTooltip
