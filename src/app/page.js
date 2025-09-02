@@ -1,9 +1,9 @@
+"use client"
 import React from 'react'
-
+import { useRouter } from 'next/navigation'
 const page = () => {
-  return (
-    <div></div>
-  )
+  const router = useRouter()
+  router.push("/Home")
 }
 
 export default page
