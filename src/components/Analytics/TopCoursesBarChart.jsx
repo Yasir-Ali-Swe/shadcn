@@ -73,7 +73,7 @@ export default function TopCoursesBarChart() {
                                     className="w-[160px]"
                                     formatter={(value, name, props) => {
                                         const revenue = props.payload.revenue
-                                        return [`${value}`, `${name} - $${revenue} revenue`]
+                                        return [`${value} `, `${name} - $${revenue} revenue`]
                                     }}
                                 />
                             }
