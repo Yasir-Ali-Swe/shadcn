@@ -23,6 +23,11 @@ const data = [
     { id: "3", name: "History", category: "Arts", tutors: 3, students: 140, revenue: 5600, status: "Unpublished", createdAt: "2023-07-10" },
     { id: "4", name: "Biology", category: "Science", tutors: 4, students: 90, revenue: 3700, status: "Published", createdAt: "2023-05-12" },
     { id: "5", name: "English", category: "Language", tutors: 6, students: 180, revenue: 7200, status: "Published", createdAt: "2023-09-01" },
+    { id: "6", name: "Algebra", category: "Science", tutors: 5, students: 200, revenue: 8500, status: "Published", createdAt: "2023-08-15" },
+    { id: "7", name: "Robotics", category: "Technology", tutors: 8, students: 220, revenue: 10500, status: "Published", createdAt: "2023-06-20" },
+    { id: "8", name: "Ecnomics", category: "Arts", tutors: 3, students: 140, revenue: 5600, status: "Unpublished", createdAt: "2023-07-10" },
+    { id: "9", name: "Chemistry", category: "Science", tutors: 4, students: 90, revenue: 3700, status: "Published", createdAt: "2023-05-12" },
+    { id: "10", name: "Physics", category: "Language", tutors: 6, students: 180, revenue: 7200, status: "Published", createdAt: "2023-09-01" },
 ]
 
 const columns = [

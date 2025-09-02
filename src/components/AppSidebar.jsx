@@ -44,7 +44,7 @@ const AppSidebar = () => {
                     <SidebarMenuItem>
                         <SidebarMenuButton asChild>
                             <Link href="/" >
-                                <IoSchoolOutline size={64}  />
+                                <IoSchoolOutline size={64} />
                                 <span className="flex items-center text-xl font-semibold">
                                     Tutor Universe
                                 </span>
@@ -55,7 +55,7 @@ const AppSidebar = () => {
             </SidebarHeader>
             <SidebarContent>
                 <SidebarGroup>
-                    <SidebarGroupLabel className={"text-base"}>System Overview</SidebarGroupLabel>
+                    <SidebarGroupLabel className={"text-base"}>Admin Panel</SidebarGroupLabel>
                     <SidebarGroupContent>
                         <SidebarMenu>
                             <SidebarMenuItem>
