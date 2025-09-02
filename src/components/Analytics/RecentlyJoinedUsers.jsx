@@ -82,7 +82,7 @@ export default function DailyJoinsChart() {
                                 stroke="var(--chart-2)"
                                 strokeWidth={3}
                                 dot={{ r: 4, fill: "var(--chart-2)" }}
-                                activeDot={{ r: 5 }}
+                                activeDot={{ r: 6 }}
                             />
                         </LineChart>
                     </ResponsiveContainer>
