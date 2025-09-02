@@ -4,6 +4,7 @@ import TutorChart from "@/components/Home/Tutors";
 import StudentChart from "@/components/Home/Students";
 import RevenueChart from "@/components/Home/RevenueChart";
 import RecentlyJoiedUsers from "@/components/Analytics/RecentlyJoinedUsers";
+import TopCoursesBarChart from "@/components/Analytics/TopCoursesBarChart";
 const page = () => {
     return (
         <section className='min-h-screen bg-background p-4'>
@@ -30,6 +31,9 @@ const page = () => {
                 </div>
                 <div className='my-5'>
                     <RecentlyJoiedUsers />
+                </div>
+                <div className='my-5'>
+                    <TopCoursesBarChart />
                 </div>
 
             </div>
