@@ -10,27 +10,27 @@ import Image from 'next/image';
 const links = [
     {
         title: "Home",
-        url: "/Home",
+        url: "/AdminHome",
         icon: Home
     },
     {
         title: "Students",
-        url: "/Students",
+        url: "/AdminStudents",
         icon: PiStudent
     },
     {
         title: "Tutors",
-        url: "/Tutors",
+        url: "/AdminTutors",
         icon: PiChalkboardTeacher
     },
     {
         title: "Courses",
-        url: "/Courses",
+        url: "/AdminCourses",
         icon: NotepadText
     },
     {
         title: "Analytics",
-        url: "/Analytics",
+        url: "/AdminAnalytics",
         icon: ChartNoAxesCombined
     },
 
